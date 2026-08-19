@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | E-Sports Club</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand logo fw-bold" href="index.html">E-Sports Club</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tournament.html">Tournament</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ranking.html">Team Rankings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">Player Profiles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Event Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero about-hero">
+      <div class="overlay"></div>
+      <div class="container hero-content">
+        <h1>EVENT GALLERY</h1>
+        <p>Explore the best moments from our e-sports tournaments.</p>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <h2 class="text-center mb-5">Tournament Highlights</h2>
+
+      <div class="row g-4" id="gallery-container">
+        <div class="text-center text-white-50">Loading gallery images...</div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container text-center">
+        <h4>E-Sports Club</h4>
+        <p>© 2026 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>

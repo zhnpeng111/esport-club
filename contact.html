@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | E-Sports Club</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand logo fw-bold" href="index.html">E-Sports Club</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tournament.html">Tournament</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ranking.html">Team Rankings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="player.html">Player Profiles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Event Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <!-- current page -->
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero about-hero">
+      <div class="overlay"></div>
+      <div class="container hero-content">
+        <h1>CONTACT & JOIN US</h1>
+        <p>Become a member of our E-Sports Club today!</p>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-6 d-flex">
+          <div
+            class="feature-box h-100 w-100 d-flex flex-column justify-content-between"
+          >
+            <div>
+              <h3 class="mb-4">
+                <i class="fa-solid fa-user-plus me-2"></i> Join Our Club
+              </h3>
+
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label class="form-label text-white">Full Name</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    class="form-control bg-dark text-white border-secondary"
+                    required
+                    placeholder="Enter your name"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label text-white">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control bg-dark text-white border-secondary"
+                    required
+                    placeholder="Enter your email"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label text-white">Preferred Game</label>
+                  <select
+                    id="preferredGame"
+                    class="form-select bg-dark text-white border-secondary"
+                  >
+                    <option value="Valorant">Valorant</option>
+                    <option value="Mobile Legends">
+                      Mobile Legends (MLBB)
+                    </option>
+                    <option value="Counter-Strike 2">Counter-Strike 2</option>
+                    <option value="League of Legends">League of Legends</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label text-white"
+                    >Message / Experience</label
+                  >
+                  <textarea
+                    id="message"
+                    class="form-control bg-dark text-white border-secondary"
+                    rows="3"
+                    placeholder="Tell us about your gaming rank or experience"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 py-2">
+                  Submit Application
+                </button>
+              </form>
+
+              <div
+                id="formAlert"
+                class="alert alert-success mt-3 d-none"
+                role="alert"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!--Facebook Page Plugin -->
+        <div class="col-lg-6 d-flex">
+          <div
+            class="feature-box h-100 w-100 d-flex flex-column justify-content-between"
+          >
+            <div>
+              <h3 class="mb-4">
+                <i class="fa-brands fa-facebook me-2"></i> Facebook Community
+              </h3>
+              <p class="text-white-50 mb-3">
+                Follow our official Facebook page for live tournament updates
+                and news!
+              </p>
+
+              <!-- Facebook Page Plugin (use iframe ) -->
+              <div
+                class="rounded overflow-hidden mb-4 shadow border border-secondary text-center bg-white"
+              >
+                <iframe
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F61592490526282%2F&tabs=timeline&width=500&height=360&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                  width="100%"
+                  height="320"
+                  style="border: none; overflow: hidden"
+                  scrolling="no"
+                  frameborder="0"
+                  allowfullscreen="true"
+                  allow="
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    picture-in-picture;
+                    web-share;
+                  "
+                >
+                </iframe>
+              </div>
+            </div>
+            <!-- social media -->
+            <div class="text-center pt-2">
+              <h5 class="mb-3 text-white">Connect Elsewhere</h5>
+              <div class="d-flex justify-content-center gap-2 flex-wrap">
+                <a href="#" class="btn btn-outline-light"
+                  ><i class="fa-brands fa-discord me-1"></i> Discord</a
+                >
+                <a
+                  href="https://youtube.com/@tttt-we8mb?si=Wi8ofeRADfa3rZqI"
+                  class="btn btn-outline-light"
+                  ><i class="fa-brands fa-youtube me-1"></i> YouTube</a
+                >
+                <a href="#" class="btn btn-outline-light"
+                  ><i class="fa-brands fa-instagram me-1"></i> Instagram</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container text-center">
+        <h4>E-Sports Club</h4>
+        <p>© 2026 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

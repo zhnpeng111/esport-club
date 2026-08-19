@@ -1,0 +1,309 @@
+{
+  "players": [
+    {
+      "id": "1",
+      "name": "Faker",
+      "team": "T1",
+      "game": "League of Legends",
+      "country": "South Korea",
+      "image": "images/faker.jpg"
+    },
+    {
+      "id": "2",
+      "name": "TenZ",
+      "team": "Sentinels",
+      "game": "Valorant",
+      "country": "Canada",
+      "image": "images/tenz.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Jinggg",
+      "team": "Paper Rex",
+      "game": "Valorant",
+      "country": "Singapore",
+      "image": "images/jinggg.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Aspas",
+      "team": "MIBR",
+      "game": "Valorant",
+      "country": "Brazil",
+      "image": "images/aspas.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Demon1",
+      "team": "NRG",
+      "game": "Valorant",
+      "country": "USA",
+      "image": "images/demon1.jpg"
+    },
+    {
+      "id": "6",
+      "name": "ZmjjKK",
+      "team": "EDward Gaming",
+      "game": "Valorant",
+      "country": "China",
+      "image": "images/zmjjkk.jpg"
+    }
+  ],
+  "tournaments": [
+    {
+      "id": "1",
+      "name": "Valorant Vanguard Cup",
+      "game": "Valorant",
+      "date": "2026-07-05",
+      "location": "Kuala Lumpur, Malaysia",
+      "status": "ongoing",
+      "prizePool": "RM 180,000",
+      "teams": [
+        "Crimson Vipers",
+        "Silver Falcons",
+        "Nova Guardians",
+        "Iron Wolves"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "MLBB Malaysia Masters",
+      "game": "Mobile Legends: Bang Bang",
+      "date": "2026-05-20",
+      "location": "Penang, Malaysia",
+      "status": "completed",
+      "prizePool": "RM 250,000",
+      "teams": [
+        "Thunder Hawks",
+        "Golden Phoenix",
+        "Shadow Reapers",
+        "Storm Riders"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "League Rift Championship",
+      "game": "League of Legends",
+      "date": "2026-10-11",
+      "location": "Johor Bahru, Malaysia",
+      "status": "upcoming",
+      "prizePool": "RM 220,000",
+      "teams": [
+        "Emerald Dragons",
+        "Frost Titans",
+        "Solar Knights",
+        "Obsidian Lions"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Dota 2 Borneo Brawl",
+      "game": "Dota 2",
+      "date": "2026-08-28",
+      "location": "Kuching, Sarawak",
+      "status": "ongoing",
+      "prizePool": "RM 160,000",
+      "teams": [
+        "Crimson Sentinels",
+        "Void Walkers",
+        "Radiant Storm",
+        "Dire Wolves"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "PUBG Peninsula Showdown",
+      "game": "PUBG",
+      "date": "2026-11-02",
+      "location": "Ipoh, Perak",
+      "status": "upcoming",
+      "prizePool": "RM 130,000",
+      "teams": [
+        "Desert Eagles",
+        "Steel Vipers",
+        "Night Owls",
+        "Apex Raiders"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Counter-Strike Selangor Series",
+      "game": "Counter-Strike",
+      "date": "2026-07-30",
+      "location": "Shah Alam, Selangor",
+      "status": "completed",
+      "prizePool": "RM 140,000",
+      "teams": [
+        "Bravo Squad",
+        "Alpha Wolves",
+        "Red Phoenix",
+        "Iron Guard"
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "id": "1",
+      "rank": 1,
+      "team": "Crimson Vipers",
+      "game": "Valorant",
+      "points": 940,
+      "wins": 39,
+      "losses": 9
+    },
+    {
+      "id": "2",
+      "rank": 2,
+      "team": "Silver Falcons",
+      "game": "Valorant",
+      "points": 905,
+      "wins": 36,
+      "losses": 11
+    },
+    {
+      "id": "3",
+      "rank": 3,
+      "team": "Nova Guardians",
+      "game": "Valorant",
+      "points": 860,
+      "wins": 32,
+      "losses": 13
+    },
+    {
+      "id": "4",
+      "rank": 1,
+      "team": "Thunder Hawks",
+      "game": "Mobile Legends: Bang Bang",
+      "points": 960,
+      "wins": 41,
+      "losses": 7
+    },
+    {
+      "id": "5",
+      "rank": 2,
+      "team": "Golden Phoenix",
+      "game": "Mobile Legends: Bang Bang",
+      "points": 915,
+      "wins": 37,
+      "losses": 10
+    },
+    {
+      "id": "6",
+      "rank": 3,
+      "team": "Shadow Reapers",
+      "game": "Mobile Legends: Bang Bang",
+      "points": 870,
+      "wins": 33,
+      "losses": 13
+    },
+    {
+      "id": "7",
+      "rank": 1,
+      "team": "Emerald Dragons",
+      "game": "League of Legends",
+      "points": 925,
+      "wins": 38,
+      "losses": 10
+    },
+    {
+      "id": "8",
+      "rank": 2,
+      "team": "Frost Titans",
+      "game": "League of Legends",
+      "points": 880,
+      "wins": 34,
+      "losses": 12
+    },
+    {
+      "id": "9",
+      "rank": 3,
+      "team": "Solar Knights",
+      "game": "League of Legends",
+      "points": 835,
+      "wins": 30,
+      "losses": 15
+    },
+    {
+      "id": "10",
+      "rank": 1,
+      "team": "Crimson Sentinels",
+      "game": "Dota 2",
+      "points": 900,
+      "wins": 36,
+      "losses": 11
+    },
+    {
+      "id": "11",
+      "rank": 2,
+      "team": "Void Walkers",
+      "game": "Dota 2",
+      "points": 860,
+      "wins": 33,
+      "losses": 13
+    },
+    {
+      "id": "12",
+      "rank": 3,
+      "team": "Radiant Storm",
+      "game": "Dota 2",
+      "points": 815,
+      "wins": 29,
+      "losses": 16
+    },
+    {
+      "id": "13",
+      "rank": 1,
+      "team": "Desert Eagles",
+      "game": "PUBG",
+      "points": 875,
+      "wins": 34,
+      "losses": 12
+    },
+    {
+      "id": "14",
+      "rank": 2,
+      "team": "Steel Vipers",
+      "game": "PUBG",
+      "points": 830,
+      "wins": 30,
+      "losses": 15
+    },
+    {
+      "id": "15",
+      "rank": 3,
+      "team": "Night Owls",
+      "game": "PUBG",
+      "points": 790,
+      "wins": 27,
+      "losses": 17
+    },
+    {
+      "id": "16",
+      "rank": 1,
+      "team": "Bravo Squad",
+      "game": "Counter-Strike",
+      "points": 890,
+      "wins": 35,
+      "losses": 12
+    },
+    {
+      "id": "17",
+      "rank": 2,
+      "team": "Alpha Wolves",
+      "game": "Counter-Strike",
+      "points": 845,
+      "wins": 31,
+      "losses": 14
+    },
+    {
+      "id": "18",
+      "rank": 3,
+      "team": "Red Phoenix",
+      "game": "Counter-Strike",
+      "points": 800,
+      "wins": 28,
+      "losses": 16
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

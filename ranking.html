@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Rankings | E-Sports Club</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand logo fw-bold" href="index.html">
+          E-Sports Club
+        </a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="tournament.html">Tournament</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="ranking.html"> Team Rankings </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="player.html"> Player Profiles </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html"> Event Schedule </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero about-hero">
+      <div class="overlay"></div>
+
+      <div class="container hero-content">
+        <h1>TEAM RANKINGS</h1>
+
+        <p>See how the world's top teams stack up.</p>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="container py-5">
+      <h2 class="text-center mb-4">Global Rankings</h2>
+
+      <div class="row justify-content-center mb-5 g-3">
+        <div class="col-md-5">
+          <input
+            type="text"
+            id="searchTeam"
+            class="form-control"
+            placeholder="Search team by name..."
+          />
+        </div>
+
+        <div class="col-md-4">
+          <select id="gameFilter" class="form-select">
+            <option value="all">All Games</option>
+            <option value="Valorant">Valorant</option>
+            <option value="Mobile Legends: Bang Bang">
+              Mobile Legends: Bang Bang
+            </option>
+            <option value="League of Legends">League of Legends</option>
+            <option value="Dota 2">Dota 2</option>
+            <option value="PUBG">PUBG</option>
+            <option value="Counter-Strike">Counter-Strike</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-dark table-hover align-middle ranking-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>Game</th>
+              <th>Points</th>
+              <th>Wins</th>
+              <th>Losses</th>
+              <th></th>
+            </tr>
+          </thead>
+
+          <tbody id="rankingBody">
+            <!-- JavaScript will generate ranking rows here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Add Team (REST API demo: POST) -->
+    <section class="container py-5">
+      <h2 class="text-center mb-4">Add a Team</h2>
+
+      <p class="text-center small-note">
+        Sends a POST request to the local REST API (json-server).
+      </p>
+
+      <form id="addTeamForm" class="row g-3 justify-content-center form-card">
+        <div class="col-md-2">
+          <input
+            type="number"
+            id="newRank"
+            class="form-control"
+            placeholder="Rank"
+            min="1"
+            required
+          />
+        </div>
+
+        <div class="col-md-4">
+          <input
+            type="text"
+            id="newTeamName"
+            class="form-control"
+            placeholder="Team name"
+            required
+          />
+        </div>
+
+        <div class="col-md-4">
+          <input
+            type="text"
+            id="newTeamGame"
+            class="form-control"
+            placeholder="Game"
+            required
+          />
+        </div>
+
+        <div class="col-md-2">
+          <input
+            type="number"
+            id="newPoints"
+            class="form-control"
+            placeholder="Points"
+            min="0"
+            required
+          />
+        </div>
+
+        <div class="col-md-2">
+          <input
+            type="number"
+            id="newWins"
+            class="form-control"
+            placeholder="Wins"
+            min="0"
+            required
+          />
+        </div>
+
+        <div class="col-md-2">
+          <input
+            type="number"
+            id="newLosses"
+            class="form-control"
+            placeholder="Losses"
+            min="0"
+            required
+          />
+        </div>
+
+        <div class="col-md-10 text-center">
+          <button type="submit" class="btn btn-success">
+            <i class="fa-solid fa-plus"></i> Add Team
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Favourite Teams -->
+    <section class="container py-5">
+      <h2 class="text-center mb-4">
+        <i class="fa-solid fa-star"></i>
+        Favourite Teams
+      </h2>
+
+      <p class="text-center small-note">
+        Favourites are saved for this browser session only.
+      </p>
+
+      <ul id="favoriteTeamList" class="list-group">
+        <!-- Session Storage output -->
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <h4>E-Sports Club</h4>
+
+        <p>© 2026 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/navbar.js"></script>
+
+    <script src="js/ranking.js"></script>
+  </body>
+</html>

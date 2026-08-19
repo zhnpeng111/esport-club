@@ -1,0 +1,516 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#111;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+    transition:.4s;
+}
+
+.logo{
+    color:#6f42c1 !important;
+    font-size:28px;
+}
+
+.nav-link{
+    color:#222 !important;
+    font-weight:500;
+    margin-left:15px;
+}
+
+.nav-link:hover{
+    color:#6f42c1 !important;
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+
+    position:relative;
+
+    height:100vh;
+
+    background:url("../images/hero.jpg") center center/cover no-repeat;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.65);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:10;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:32px;
+
+    letter-spacing:3px;
+
+}
+
+.hero h2{
+
+    font-size:72px;
+
+    font-weight:800;
+
+    margin:20px 0;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    margin-bottom:30px;
+
+}
+
+.hero .btn{
+
+    padding:15px 45px;
+
+    border-radius:40px;
+
+    background:#6f42c1;
+
+    border:none;
+
+}
+
+.hero .btn:hover{
+
+    background:#8f5cff;
+
+    transform:translateY(-5px);
+
+}
+
+/* ===========================
+   Section
+=========================== */
+
+section{
+
+    padding-top:90px;
+
+    padding-bottom:90px;
+
+}
+
+/* ===========================
+   Welcome
+=========================== */
+
+section h2{
+
+    font-weight:700;
+
+    color:#fff;
+
+}
+
+section p{
+
+    color:#d7d7d7;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   Featured Games
+=========================== */
+
+.game-card{
+
+    background:#1f1f1f;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.game-card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+.game-card h5{
+
+    padding:20px;
+
+    color:white;
+
+}
+
+.game-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px #6f42c1;
+
+}
+
+/* ===========================
+   Explore
+=========================== */
+
+.feature-box{
+
+    background:#1d1d1d;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    transition:.35s;
+
+}
+
+.feature-box i{
+
+    font-size:55px;
+
+    color:#6f42c1;
+
+    margin-bottom:20px;
+
+}
+
+.feature-box:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px #6f42c1;
+
+}
+
+/* ===========================
+   Cookie Banner
+=========================== */
+
+#cookie-banner{
+
+    position:fixed;
+
+    bottom:20px;
+
+    left:20px;
+
+    width:350px;
+
+    background:white;
+
+    color:#222;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    z-index:9999;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+}
+
+#cookie-banner button{
+
+    margin-top:10px;
+
+    margin-right:10px;
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    background:#000;
+
+    padding:35px;
+
+    text-align:center;
+
+}
+
+footer p{
+
+    color:#aaa;
+
+    margin-top:10px;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.hero h2{
+
+font-size:50px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h2{
+
+font-size:38px;
+
+}
+
+.hero h1{
+
+font-size:22px;
+
+}
+
+.hero{
+
+padding:20px;
+
+}
+
+.game-card img{
+
+height:180px;
+
+}
+
+#cookie-banner{
+
+width:90%;
+
+left:5%;
+
+}
+
+}
+/* ===========================
+   Sticky Navbar
+=========================== */
+
+#mainNavbar{
+
+    background:transparent;
+
+    transition:0.4s ease;
+
+    padding:18px 0;
+
+}
+
+#mainNavbar.scrolled{
+
+    background:white;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    padding:10px 0;
+
+}
+
+#mainNavbar.scrolled .nav-link{
+
+    color:#222 !important;
+
+}
+
+#mainNavbar.scrolled .logo{
+
+    color:#6f42c1 !important;
+
+}
+
+/* Active Menu */
+
+.nav-link.active{
+
+    color:#6f42c1 !important;
+
+    font-weight:700;
+
+}
+/* ===========================
+   Player & Event Cards
+=========================== */
+
+.card{
+    background:#1d1d1d;
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
+    transition:0.35s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px #6f42c1;
+}
+
+.card img{
+    height:300px;
+    object-fit:cover;
+}
+
+.card h4{
+    color:#fff;
+    font-weight:700;
+}
+
+.card p{
+    color:#d7d7d7;
+}
+
+.card .btn{
+    border-radius:30px;
+    font-weight:600;
+    margin-top:10px;
+}
+
+/* ===========================
+   Search Box
+=========================== */
+
+#searchPlayer{
+    max-width:500px;
+    margin:auto;
+    padding:12px 18px;
+    border-radius:30px;
+    border:2px solid #6f42c1;
+    background:#1f1f1f;
+    color:#fff;
+}
+
+#searchPlayer::placeholder{
+    color:#bbb;
+}
+
+#searchPlayer:focus{
+    outline:none;
+    box-shadow:0 0 12px #6f42c1;
+}
+
+/* ===========================
+   Favourite & Saved List
+=========================== */
+
+.list-group{
+    max-width:700px;
+    margin:auto;
+}
+
+.list-group-item{
+    background:#1f1f1f;
+    color:white;
+    border:1px solid #6f42c1;
+    margin-bottom:10px;
+    border-radius:10px;
+}
+
+/* ===========================
+   Section Titles
+=========================== */
+
+section h2{
+    margin-bottom:30px;
+}
+
+/* ===========================
+   Button Hover
+=========================== */
+
+.btn-primary,
+.btn-success{
+    transition:.3s;
+}
+
+.btn-primary:hover,
+.btn-success:hover{
+    transform:translateY(-3px);
+}
+
+/* ===========================
+   Mobile Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .card img{
+        height:220px;
+    }
+
+    #searchPlayer{
+        width:100%;
+    }
+
+}
