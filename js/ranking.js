@@ -1,7 +1,7 @@
 // ===========================
 // REST API config
 // ===========================
-const API_URL = "http://esport-club.onrender.com/teams";
+const API_URL = "https://esport-club.onrender.com/teams";
 
 let teams = []; // populated from the API
 
